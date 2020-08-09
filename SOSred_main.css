@@ -1,0 +1,112 @@
+* {
+    font-family: "Poppins";
+}
+
+.carousel-indicators li {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+}
+
+h2 {
+    padding-top: 95px;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.w-100 {
+    max-height: 1100px;
+    }
+
+    .communication {
+        background-color:#F22B29;
+        color: white;
+        text-align: center;
+        padding-bottom: 150px;
+        margin-bottom: 200px;
+    }
+
+.phone_image {
+    height: 145px;
+    width: 145px;
+}
+
+.whatsapp_image {
+   height: 145px;
+   width: 145px;
+}
+
+.webapp_image {
+    height: 145px;
+    width: 145px;
+}
+
+.image_text {
+    padding-top: 100px;
+}
+
+.services {
+    text-align: center;
+}
+
+.four_grid {
+    max-height: 800px;
+    max-width: 800px;
+}
+
+
+
+.contact {
+    text-align: center;
+}
+
+
+.custom-container {
+width: 100%;
+}
+
+
+
+/* footer */
+
+.page-footer {
+    background-color: #E2E2E2;
+    padding-top: 125px;
+    padding-bottom: 65px;
+    font-size: 24px;
+}
+
+.text-uppercase-one {
+    text-align: right;
+}
+
+.text-uppercase-two {
+    text-align: left;
+}
+
+.links {
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+}
+
+.links a {
+    padding-right: 30px;
+    padding-left: 30px;
+    color: black;
+}
+
+.links a:hover {
+    color: #13ADC6;
+    text-decoration: none;
+}
+
+
+.rights {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+    padding-top: 120px;
+}
