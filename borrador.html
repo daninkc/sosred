@@ -4,65 +4,175 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="bootstrap.css">
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <title>Document</title>
 
 <style>
-    .container {
-        text-align: center;
-        border: solid 1px black;
-    }
 
-    .col {
-        border: solid 1px blue;
-    }
+.col-xs-5ths,
+.col-sm-5ths,
+.col-md-5ths,
+.col-lg-5ths {
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
 
-    .row {
-        border: solid 1px yellow;
-    }
+.col-xs-5ths {
+    width: 20%;
+    float: left;
+}
 
+@media (min-width: 768px) {
+    .col-sm-5ths {
+        width: 20%;
+        float: left;
+    }
+}
+
+@media (min-width: 992px) {
+    .col-md-5ths {
+        width: 20%;
+        float: left;
+    }
+}
+
+@media (min-width: 1200px) {
+    .col-lg-5ths {
+        width: 20%;
+        float: left;
+    }
+}
+
+/* .blog .carousel-indicators {
+	left: 0;
+	top: auto;
+    bottom: -40px;
+
+}
+
+/* The colour of the indicators */
+.blog .carousel-indicators li {
+    background: #a3a3a3;
+    border-radius: 50%;
+    width: 20px;
+    height: 1px;
+}
+
+.blog .carousel-indicators .active {
+background: #707070;
+} */
 
 </style>
 </head>
 <body>
 
-    
-<section class="form">
+  <!------ Include the above in your HEAD tag ---------->
+  
+  <div class="container">
+              <div class="row blog">
+                  <div class="col-md-12">
+                      <div id="blogCarousel" class="carousel slide" data-ride="carousel">
+  
 
-    <div class="container">
-        <div class="row">
-          <div class="col big-box">
-            col-big-box
-          </div>
-      
-          <div class="col">
-            <div class="row">
-              <div class="col mini-box">1</div>
-              <div class="col mini-box">2</div>
-            </div>
-            <div class="row">
-              <div class="col mini-box">3</div>
-              <div class="col mini-box">4</div>
-            </div>
-
-            <div class="row">
-                <div class="col mini-box">3</div>
+  
+                          <!-- Carousel items -->
+                          <div class="carousel-inner">
+  
+                              <div class="carousel-item active">
+                                  <div class="row">
+                                    <div class="col-md-5ths col-xs-6">
+                                      <a href="#">
+                                          <img src="/content/Logos de clientes/Amca.PNG" alt="Image" style="max-width:100%;">
+                                      </a>
+                                  </div>
+                                  <div class="col-md-5ths col-xs-6">
+                                      <a href="#">
+                                          <img src="/content/Logos de clientes/Argos.PNG" alt="Image" style="max-width:100%;">
+                                      </a>
+                                  </div>
+                                  <div class="col-md-5ths col-xs-6">
+                                      <a href="#">
+                                          <img src="/content/Logos de clientes/Audi.PNG" alt="Image" style="max-width:100%;">
+                                      </a>
+                                  </div>
+                                  <div class="col-md-5ths col-xs-6">
+                                      <a href="#">
+                                          <img src="/content/Logos de clientes/Berkley.PNG" alt="Image" style="max-width:100%;">
+                                      </a>
+                                  </div>
+                                  <div class="col-md-5ths col-xs-6">
+                                    <a href="#">
+                                        <img src="/content/Logos de clientes/BMW.PNG" alt="Image" style="max-width:100%;">
+                                    </a>
+                                </div>
+                                  </div>
+                                  <!--.row-->
+                              </div>
+                              <!--.item-->
+  
+                              <div class="carousel-item">
+                                  <div class="row">
+                                    <div class="col-md-5ths col-xs-6">
+                                      <a href="#">
+                                          <img src="/content/Logos de clientes/Caruso.PNG" alt="Image" style="max-width:100%;">
+                                      </a>
+                                  </div>
+                                  <div class="col-md-5ths col-xs-6">
+                                      <a href="#">
+                                          <img src="/content/Logos de clientes/Chrysler.PNG" alt="Image" style="max-width:100%;">
+                                      </a>
+                                  </div>
+                                  <div class="col-md-5ths col-xs-6">
+                                      <a href="#">
+                                          <img src="/content/Logos de clientes/Citroen.PNG" alt="Image" style="max-width:100%;">
+                                      </a>
+                                  </div>
+                                  <div class="col-md-5ths col-xs-6">
+                                      <a href="#">
+                                          <img src="/content/Logos de clientes/Dodge.PNG" alt="Image" style="max-width:100%;">
+                                      </a>
+                                  </div>
+                                  <div class="col-md-5ths col-xs-6">
+                                    <a href="#">
+                                        <img src="/content/Logos de clientes/DS.PNG" alt="Image" style="max-width:100%;">
+                                    </a>
+                                </div>
+                                  </div>
+                                  <!--.row-->
+                              </div>
+                              <!--.item-->
+  
+                          </div>
+                          <!--.carousel-inner-->
+                      </div>
+                      <!--.Carousel-->
+                      <br><br><br>
+                      <ol class="carousel-indicators">
+                        <li data-target="#blogCarousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#blogCarousel" data-slide-to="1"></li>
+                        <li data-target="#blogCarousel" data-slide-to="2"></li>
+                        <li data-target="#blogCarousel" data-slide-to="3"></li>
+                    </ol>
+                  </div>
               </div>
-
-              <div class="row">
-                <div class="col mini-box">3</div>
-              </div>
-
-              <div class="row">
-                <div class="col mini-box">3</div>
-              </div>
-
-
-          </div>
-      
-        </div>
-      </div>    
-
-</section>
+  </div>
 
 </body>
+
+
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script>
+
+		$('#blogCarousel').carousel({
+				interval: 5000
+		});
+
+</script>
+
 </html>

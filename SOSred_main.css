@@ -64,6 +64,20 @@ padding-left: 120px;
 text-align: left;
 }
 
+@media (min-width: 1200px) {
+.container {
+    max-width: 1400px;
+}
+
+@media (min-width: 1800px) {
+    .big-box {
+        padding-left: 200px;
+    }
+    .container {
+        padding-right: 200px;
+    }
+}
+
 .container h5 {
     font-size: 61px;
     font-weight: 600;
@@ -127,19 +141,12 @@ font-size: 28px;
 
 
 /* map */
-.mapouter {
-    position: relative;
-    text-align: right;
-    height: 445px;
-    width: 2500px;
-}
 
-.gmap_canvas {
-    overflow: hidden;
-    background: none !important;
-    height: 445px;
-    width: 100%;}
-    
+.source-map {
+    width: 100%;
+     height: 540px;
+ border:0;
+ }
 
 /* footer */
 
