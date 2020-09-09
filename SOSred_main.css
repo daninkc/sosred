@@ -855,7 +855,7 @@ margin-top: 85px;
   .slider {
       width: 40rem;
   }
-  
+  /* 
   .slide {
       
       img {
@@ -864,7 +864,7 @@ margin-top: 85px;
           height: auto;
       }
       
-  }
+  } */
   
   .slick-dots {
       display: flex;
