@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+
+* {
+    font-family: 'Poppins';
+}
+
+.contact h3 {
+    margin: 0px;
+    font-size: 1.927vw;
+}
+
+.contact p {
+    margin: 0px;
+    font-size: 1.406vw;
+}
+
+.contact-row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    background-color: teal;
+}
+
+.contact-column {
+    display: flex;
+    flex-direction: column;
+    background-color: #DE001D;
+    width: 50%;
+    height: 23.438vw;
+    position: relative;
+    color: white;
+    justify-content: center;
+}
+
+.contact-column-text {
+    position: absolute;
+    padding-left: 3.438vw;
+    padding-top: 10.156vw;
+    padding-bottom: 4vw;
+    font-size: 1vw;
+}
+
+
+.computer-image {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    filter: brightness(75%);
+    opacity: 1;
+  display: block;
+  width: 100%;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+
+.phone-image {
+    width: 100%;
+    height: 100%;
+    filter: brightness(75%);
+}
+
+
+.small-img {
+    height: 4vw;
+    width: 4vw;
+}
+
+
+
+#contact-1 {
+    order: 1;
+}
+#contact-2 {
+    order: 2;
+}
+#contact-3 {
+    order: 3;
+}
+#contact-4 {
+    order: 4;
+}
+
+.hidden-button {
+    width: 6.354vw;
+    margin-top: 1vw;
+    font-size: 0.625vw;
+    border-radius: 0.7vw;
+    border-color: white;
+    padding: 0px;
+    border-width: 0px;
+    height: 2vw;
+    color: #DE001D;
+    background-color: white;
+    opacity: 0;
+}
+
+.contact-column:hover button {
+    opacity: 1;
+    transition-property: opacity;
+    transition-duration: 0.8s;
+}
+
+.contact-column .small-img {
+    opacity: 1;
+}
+
+.contact-column:hover .small-img {
+    opacity: 0;
+    transition-property: opacity;
+    transition-duration: 0.2s;
+}
+
+.sweep-this {
+    position: absolute;
+    width: 0%;
+    height: 100%;
+    opacity: 40%;
+}
+
+.contact-column:hover .sweep-this {
+    width: 100%;
+    transition-property: width;
+    transition-duration: 700ms;
+}
+
+
+.contact-column:hover .contact-column-text {
+    padding-top: 0px;
+    transition-property: padding-top;
+    transition-duration: 0.5s;
+}
+
+
+/*paso a vertical*/
+
+@media screen and (max-width: 768px) {
+    .contact-column {
+width: 100%;
+height: 50vw;
+}
+#contact-1 {
+    order: 1;
+}
+#contact-2 {
+    order: 2;
+}
+#contact-3 {
+    order: 4;
+}
+#contact-4 {
+    order: 3;
+}
+
+.contact h3 {
+    font-size: 5vw;
+}
+
+.contact p {
+    font-size: 4vw;
+}
+
+.hidden-button {
+    height: 6vw;
+    width: 28vw;
+    font-size: 2vw;
+}
+
+}
+
+
+</style>
+
+<body>
+    
+<section class="contact">
+
+    <div class="contact-row">
+
+        <div class="contact-column" id="contact-1">
+          <img src="./content/Exported/Computer.png" alt="" class="computer-image sweep-to-top">
+          <img src="./content/red.png" alt="" class="sweep-this">
+            <div class="contact-column-text">
+                <img src="./content/webapp.png" alt="webapp logo" class="small-img">
+                <h3 class="contact-title">Web App</h3>
+                <p class="contact-p">Ingresá a la Web App y solicitá tu servicio</p>
+                <button class="hidden-button">Ingresar</button>
+            </div>
+        </div>
+
+        <div class="contact-column" id="contact-2">
+            <img src="./content/red.png" alt="" class="sweep-this">
+            <div class="contact-column-text">
+            <img src="./content/whatsapp.png" alt="whatsapp logo" class="small-img">
+            <h3 class="contact-title">WhatsApp</h3>
+            <p class="contact-p">¡Comunicate con nosotros por WhatsApp!</p>
+            <button class="hidden-button">Ingresar</button>
+        </div>
+    </div>
+
+    </div>
+
+    <div class="contact-row">
+
+        <div class="contact-column" id="contact-3">
+            <img src="./content/red.png" alt="" class="sweep-this">
+            <div class="contact-column-text" id="portalempresas">
+                <h3 class="contact-title">Portal Empresas</h3>
+                <p class="contact-p">Ingresá al portal de empresas</p>
+                <button class="hidden-button">Ingresar</button>
+            </div>
+        </div>
+
+        <div class="contact-column" id="contact-4">
+            <img src="./content/Exported/Phone.png" alt="phone" class="phone-image">
+            <img src="./content/red.png" alt="" class="sweep-this">
+            <div class="contact-column-text">
+                <img src="./content/0800.png" alt="webapp logo" class="small-img">
+                <h3 class="contact-title">0800 333 6524</h3>
+                <p class="contact-p">Llamanos y ponete en contacto para que <br>
+                    podamos resolver tus problemas</p>
+                    <button class="hidden-button">Ingresar</button>
+            </div>
+        </div>
+
+    </div>
+
+
+</section>
+
+
+</body>
+</html>

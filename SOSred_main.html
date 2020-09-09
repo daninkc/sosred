@@ -11,64 +11,116 @@
       
   <title>SOS Red</title>
   <link rel="stylesheet" href="bootstrap.css">
-  <link rel="stylesheet" href="SOSred_main.css">
+  <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
 
   <h1>SOS red</h1>
 
-<!--   <section class="banner">
-    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-      <ol class="carousel-indicators">
-        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-      </ol>
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <img src="content/Recurso 7.png" class="d-block w-100" alt="...">
-        </div>
-        <div class="carousel-item">
-          <img src="content/Recurso 8.png" class="d-block w-100" alt="...">
-        </div>
-        <div class="carousel-item">
-          <img src="content/Recurso 9.png" class="d-block w-100" alt="...">
-        </div>
-      </div>
-      <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="sr-only">Previous</span>
-      </a>
-      <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="sr-only">Next</span>
-      </a>
-    </div>
-  </section> -->
+  
+  <section class="header">
+    <div class="logo-container">
+       <img src="./content/logo_main.png" alt="" class="logo">
+   </div>
+       <div class="navbar">
+           <button class="hamburger" type="button" id="menuButton" onclick="toggleMenu();"> 
+           </button>
+       <div class="menu-buttons" id="menu-list">
+               <a href="">Home</a>
+               <a href="">Servicios</a>
+               <a href="">Quiénes somos</a>
+               <a href="">Novedades</a>
+               <a href="">Sé parte</a>
+               <a href="">Contacto</a>
+               <a href="">Portal Empresas</a>
+       </div>
+   </div>
 
-  <section class="communication">
-    <div class="row">
-      <div class="col">
-        <div class="image_text">
-          <img src="content/phone.png" alt="phone" class="phone_image">
-          <h2>0800 555 6987</h2>
+
+
+
+
+   <div class="header-text">
+       <div class="h1-piece">
+       <h1 class="header-big">
+           TE ACOMPAÑAMOS EN TODO MOMENTO,
+       </h1>
+   </div>
+   <div class="h1-piece">
+       <h1 class="header-big">
+           EVOLUCIONAMOS JUNTO A VOS.
+       </h1>
+   </div>
+   <div class="header-subtitle">
+   INGRESÁ A NUESTRA WEB APP Y <br>
+   PEDÍ EL SERVICIO DE MANERA MAS FÁCIL.
+</div>
+<div class="header-button">
+<button>AQUÍ</button>
+</div>
+   </div>
+   <img src="./content/top_image.png" alt="" class="top-img">
+   
+
+</section>
+
+  <section class="contact">
+
+    <div class="contact-row">
+
+        <div class="contact-column" id="contact-1">
+          <img src="./content/Exported/Computer.png" alt="" class="computer-image sweep-to-top">
+          <img src="./content/red.png" alt="" class="sweep-this">
+            <div class="contact-column-text">
+                <img src="./content/webapp.png" alt="webapp logo" class="small-img">
+                <h3 class="contact-title">Web App</h3>
+                <p class="contact-p">Pedí tu servicio online haciendo clic acá</p>
+                <button class="hidden-button">Ingresar</button>
+            </div>
         </div>
-      </div>
-      <div class="col">
-        <div class="image_text">
-          <img src="content/whatsapp.png" alt="whatsapp" class="whatsapp_image">
-          <h2>WHATSAPP</h2>
+
+        <div class="contact-column" id="contact-2">
+            <img src="./content/red.png" alt="" class="sweep-this">
+            <div class="contact-column-text">
+            <img src="./content/whatsapp.png" alt="whatsapp logo" class="small-img">
+            <h3 class="contact-title">WhatsApp</h3>
+            <p class="contact-p">Comunicate con nosotros por WhatsApp</p>
+            <button class="hidden-button">Ingresar</button>
         </div>
-      </div>
-      <div class="col">
-        <div class="image_text">
-          <img src="content/webapp.png" alt="webapp" class="webapp_image">
-          <h2>WEB APP</h2>
-        </div>
-      </div>
     </div>
-  </section>
+
+    </div>
+
+    <div class="contact-row">
+
+        <div class="contact-column" id="contact-3">
+            <img src="./content/red.png" alt="" class="sweep-this">
+            <div class="contact-column-text" id="portalempresas">
+                <h3 class="contact-title">Portal Empresas</h3>
+                <p class="contact-p">Ingresá al portal de empresas</p>
+                <button class="hidden-button">Ingresar</button>
+            </div>
+        </div>
+
+        <div class="contact-column" id="contact-4">
+            <img src="./content/Exported/Phone.png" alt="phone" class="phone-image">
+            <img src="./content/red.png" alt="" class="sweep-this">
+            <div class="contact-column-text">
+                <img src="./content/0800.png" alt="webapp logo" class="small-img">
+                <h3 class="contact-title">0800 333 6524</h3>
+                <p class="contact-p">Pedí tu servicio telefónicamente</p>
+                    <button class="hidden-button">Ingresar</button>
+            </div>
+        </div>
+
+    </div>
+
+
+</section>
+
+
+
 
   <section class="services">
 
@@ -78,21 +130,20 @@
       <div class="double-div">
 
           <div class="single-div" id="div1">
-              <img src="/content/Exported/Vehiculos.png" alt="">
+              <img src="./content/Exported/Vehiculos.png" alt="">
           </div>
 
           <div class="single-div-2" id="div2">
 
-              <h1 class="card-title">Vehículos</h1>
+              <h1 class="card-title">Asistencia vehicular</h1>
               <h2 class="card-subtitle">
-                  Asistencia a vehículos, automóviles,
-                  <br>
-                  camiones y motos </h2>
+                  Circulá tranquilo, con la seguridad de
+                  contar con la mejor asistencia las 24 horas </h2>
               </h2>
-              <h3 class="card-content">Brindamos prestaciones de asistencia dirigida a los segmentos de compañías
-                  aseguradoras, fabricantes,
-                  rentadores y vehículos pesados. Ofrecemos a los automovilistas un servicio integral en cualquier
-                  lugar y circunstancia.
+              <h3 class="card-content">Servicios de urgencias mecánicas
+                y traslados en todo el país para cualquier tipo de
+                vehículo: automóviles, motos, camiones, para resolver
+                cualquier desperfecto, siniestro o urgencia que pueda ocurrir.
               </h3>
           </div>
       </div>
@@ -102,19 +153,22 @@
     <div class="double-div">
     
         <div class="single-div-2" id="div3">
-                <h1 class="card-title">Hogar</h1>
+                <h1 class="card-title">Asistencia <br> al hogar</h1>
                <h2 class="card-subtitle">
-                Asistencia al hogar, consorcios
-                <br>
-                hogares y comercios </h2>
+                ¿Tuviste una urgencia en tu casa?
+                ¿Necesitás una reparación?</h2>
                </h2>
-               <h3 class="card-content">Brindamos servicios de urgencia para el hogar. Asistimos a las personas y
-               a sus hogares solucionándoles problemas que pueden entorpecer su vida cotidiana.
+               <h3 class="card-content">
+                En SOS ponemos a tu disposición una amplia red de profesionales que llegarán a tu
+                domicilio para solucionar cualquier problema de plomería, electricidad, gas,
+                cerrajería y mucho más. Nuestra red de prestadores te asistirá dentro de 
+                tu hogar para que puedas seguir disfrutándolo como siempre.
+                
                </h3>
        </div>
     
        <div class="single-div" id="div4">
-             <img src="/content/Exported/Hogar.png" alt="">
+             <img src="./content/Exported/Hogar.png" alt="">
       </div>
 
     </div>
@@ -124,19 +178,20 @@
   <div class="double-div">
     
     <div class="single-div" id="div5">
-        <img src="/content/Exported/Viajes.png" alt="">
+        <img src="./content/Exported/Viajes.png" alt="">
     </div>
 
     <div class="single-div-2" id="div6">
 
-        <h1 class="card-title">Viajes</h1>
+        <h1 class="card-title">Asistencia <br> en viaje</h1>
         <h2 class="card-subtitle">
-            Asistencia en viaje </h2>
+            Te brindamos cobertura especial cuando te encuentres en viaje, para complementar la asistencia ante cualquier inconveniente que surja.
+          </h2>
         </h2>
-        <h3 class="card-content">Brindamos servicio de asistencia en viaje. Ayudamos a los viajeros ante
-            eventuales
-            dificultades que surjan durante su camino, para asegurar su tranquilidad.
-
+        <h3 class="card-content">
+          Desplazamiento de los beneficiarios, servicios de alojamiento, retorno al domicilio:
+          soluciones para que puedas continuar tu viaje. Te acompañamos y asistimos para que
+          sigas viajando tranquilo en caso de tener un inconveniente con tu vehículo.
         </h3>
     </div>
 </div>
@@ -146,18 +201,21 @@
 
     <div class="single-div-2" id="div7">
 
-        <h1 class="card-title">Náutica</h1>
+        <h1 class="card-title">Asistencia <br> náutica</h1>
         <h2 class="card-subtitle">
-            Asistencia náutica</h2>
+            Ante cualquier inconveniente en la navegación, te brindamos el mejor
+          servicio para la embarcación.</h2>
         </h2>
-        <h3 class="card-content">Asistencia náutica a embarcaciones de placer. Asistimos a los navegantes
-            ante eventuales dificultades que surjan durante su viaje.
+        <h3 class="card-content">
+          Desde asistencia mecánica, remolque a embarcadero, reflotamientos y varaduras,
+          así como también el rescate de todos los navegantes. Te cuidamos y acompañamos
+          para que solo te preocupes por elegir el destino.  
         </h3>
     </div>
 
 
     <div class="single-div" id="div8">
-        <img src="/content/Exported/Nautica.png" alt="">
+        <img src="./content/Exported/Nautica.png" alt="">
     </div>
 </div>
 
@@ -165,7 +223,7 @@
   </section>
 
 
-<section class="quienessomos">
+<!-- <section class="quienessomos">
   
     <div class="parallax">
 
@@ -178,15 +236,35 @@
     países limítrofes, en todos los rubros, a más de 4.500.000 beneficiarios, 1.000.000 de personas asistidas con más de 50.000.000 kilómetros recorridos en 1.100.000
     servicios anuales.
   </p>
-  
-
 
 </div>
 
 </div>
+
+
+</section> -->
+
+<section class="parallax">
+  <div class="contenedor">
+  </div>
+  <article>
+      
+<h2>QUIÉNES SOMOS</h2>
+<hr>
+<p class="under-title">Nuestra empresa se ha expandido logrando una completa cobertura nacional y países limítrofes, dependiendo en cada caso del servicio al que
+el beneficiario esté dispuesto a suscribirse. Actualmente, y habiendo cumplido ya 30 años en el mercado de la asistencias, S.O.S brinda servicios en todo el país y
+países limítrofes, en todos los rubros, a más de 4.500.000 beneficiarios, 1.000.000 de personas asistidas con más de 50.000.000 kilómetros recorridos en 1.100.000
+servicios anuales.
+</p>
+  </article>
 
 
 </section>
+
+
+
+
+
 
 
 <section class="cards">
@@ -196,34 +274,34 @@
     <div class="two-div">
 
       <div class="one-div">
-        <img src="/content/Exported/Tres personas.png" alt="" style="max-width: 100%; max-height: auto;">
+        <img src="./content/Exported/Tres personas.png" alt="" style="max-width: 100%; max-height: auto;">
       </div>
 
       <div class="one-div">
         <div class="flip-card" style="width: 100%; height: 100%;">
           <div class="flip-card-inner" style="max-width: 100%; max-height: 100%;">
             <div class="flip-card-front" style="max-width: 100%; max-height: 100%;">
-              <img src="/content/Exported/100 por ciento.png" alt="Cien por ciento" style="max-width: 100%; max-height: 100%;">
+              <img src="./content/Exported/100 por ciento.png" alt="Cien por ciento" style="max-width: 100%; max-height: 100%;">
             </div>
             <div class="flip-card-back">
-              <img src="/content/Exported/Garantía.png" alt="Garantía" style="max-width: 100%; max-height: 100%;">
+              <img src="./content/Exported/Garantía.png" alt="Garantía" style="max-width: 100%; max-height: 100%;">
             </div>
           </div>
         </div>
       </div>
 
       <div class="one-div">
-        <img src="/content/Exported/Dos personas.png" alt="Dos personas" style="max-width: 100%; max-height: auto;">
+        <img src="./content/Exported/Dos personas.png" alt="Dos personas" style="max-width: 100%; max-height: auto;">
       </div>
 
       <div class="one-div">
         <div class="flip-card" style="width: 100%; height: 100%;">
           <div class="flip-card-inner" style="max-width: 100%; max-height: 100%;">
             <div class="flip-card-front" style="max-width: 100%; max-height: 100%;">
-              <img src="/content/Exported/24 hs.png" alt="Cien por ciento" style="max-width: 100%; max-height: 100%;">
+              <img src="./content/Exported/24 hs.png" alt="Cien por ciento" style="max-width: 100%; max-height: 100%;">
             </div>
             <div class="flip-card-back">
-              <img src="/content/Exported/A tu disposición.png" alt="Garantía" style="max-width: 100%; max-height: 100%;">
+              <img src="./content/Exported/A tu disposición.png" alt="Garantía" style="max-width: 100%; max-height: 100%;">
             </div>
           </div>
         </div>
@@ -242,10 +320,10 @@
           <div class="flip-card" style="width: 100%; height: 100%;">
             <div class="flip-card-inner" style="max-width: 100%; max-height: 100%;">
               <div class="flip-card-front" style="max-width: 100%; max-height: 100%;">
-                <img src="/content/Exported/30.png" alt="Cien por ciento" style="max-width: 100%; max-height: 100%;">
+                <img src="./content/Exported/30.png" alt="Cien por ciento" style="max-width: 100%; max-height: 100%;">
               </div>
               <div class="flip-card-back">
-                <img src="/content/Exported/De experiencia.png" alt="Garantía" style="max-width: 100%; max-height: 100%;">
+                <img src="./content/Exported/De experiencia.png" alt="Garantía" style="max-width: 100%; max-height: 100%;">
               </div>
             </div>
           </div>
@@ -255,7 +333,7 @@
 
 
         <div class="one-div">
-          <img src="/content/Exported/Una persona.png" alt="" style="max-width: 100%; max-height: auto;">
+          <img src="./content/Exported/Una persona.png" alt="" style="max-width: 100%; max-height: auto;">
         </div>
 
 
@@ -265,17 +343,17 @@
           <div class="flip-card" style="width: 100%; height: 100%;">
             <div class="flip-card-inner" style="max-width: 100%; max-height: 100%;">
               <div class="flip-card-front" style="max-width: 100%; max-height: 100%;">
-                <img src="/content/Exported/1 millon.png" alt="Cien por ciento" style="max-width: 100%; max-height: 100%;">
+                <img src="./content/Exported/1 millon.png" alt="Cien por ciento" style="max-width: 100%; max-height: 100%;">
               </div>
               <div class="flip-card-back">
-                <img src="/content/Exported/De personas auxiliadas.png" alt="Garantía" style="max-width: 100%; max-height: 100%;">
+                <img src="./content/Exported/De personas auxiliadas.png" alt="Garantía" style="max-width: 100%; max-height: 100%;">
               </div>
             </div>
           </div>
         </div>
 
         <div class="one-div">
-          <img src="/content/Exported/Camión.png" alt="Dos personas" style="max-width: 100%; max-height: auto;">
+          <img src="./content/Exported/Camión.png" alt="Dos personas" style="max-width: 100%; max-height: auto;">
         </div>
 
 
@@ -301,42 +379,42 @@
 
 
   <div class="customer-logos">
-    <div class="slide"><img src="/content/Logos de clientes/Amca.PNG"></div>
-    <div class="slide"><img src="/content/Logos de clientes/Argos.PNG"></div>
-    <div class="slide"><img src="/content/Logos de clientes/Audi.PNG"></div>
-    <div class="slide"><img src="/content/Logos de clientes/Berkley.PNG"></div>
-    <div class="slide"><img src="/content/Logos de clientes/BMW.PNG"></div>
-    <div class="slide"><img src="/content/Logos de clientes/Ducati.PNG"></div>
-    <div class="slide"><img src="/content/Logos de clientes/El norte.PNG"></div>
-    <div class="slide"><img src="/content/Logos de clientes/Federacion.PNG"></div>
-    <div class="slide"><img src="/content/Logos de clientes/Fiat.PNG"></div>
-    <div class="slide"><img src="/content/Logos de clientes/Galeno.PNG"></div>
-    <div class="slide"><img src="/content/Logos de clientes/GCBA.PNG"></div>
-    <div class="slide"><img src="/content/Logos de clientes/Integrity.PNG"></div>
-    <div class="slide"><img src="/content/Logos de clientes/IPER.PNG"></div>
-    <div class="slide"><img src="/content/Logos de clientes/Iunigo.PNG"></div>
-    <div class="slide"><img src="/content/Logos de clientes/Iveco.PNG"></div>
-    <div class="slide"><img src="/content/Logos de clientes/Land Rover.PNG"></div>
-    <div class="slide"><img src="/content/Logos de clientes/Lexus.PNG"></div>
-    <div class="slide"><img src="/content/Logos de clientes/Luz y Fuerza.PNG"></div>
-    <div class="slide"><img src="/content/Logos de clientes/Mercantil Andina.PNG"></div>
-    <div class="slide"><img src="/content/Logos de clientes/Mercedes.PNG"></div>
-    <div class="slide"><img src="/content/Logos de clientes/Meridional.PNG"></div>
-    <div class="slide"><img src="/content/Logos de clientes/Metropolitana.png"></div>
-    <div class="slide"><img src="/content/Logos de clientes/Mini.PNG"></div>
-    <div class="slide"><img src="/content/Logos de clientes/Nacion.PNG"></div>
-    <div class="slide"><img src="/content/Logos de clientes/Orbis.PNG"></div>
-    <div class="slide"><img src="/content/Logos de clientes/Peugeot.PNG"></div>
-    <div class="slide"><img src="/content/Logos de clientes/Prosegur.PNG"></div>
-    <div class="slide"><img src="/content/Logos de clientes/Provincia.PNG"></div>
-    <div class="slide"><img src="/content/Logos de clientes/Ram.PNG"></div>
-    <div class="slide"><img src="/content/Logos de clientes/Rio Uruguay.PNG"></div>
-    <div class="slide"><img src="/content/Logos de clientes/Sura.PNG"></div>
-    <div class="slide"><img src="/content/Logos de clientes/Toyota.PNG"></div>
-    <div class="slide"><img src="/content/Logos de clientes/TPC.PNG"></div>
-    <div class="slide"><img src="/content/Logos de clientes/Victoria.PNG"></div>
-    <div class="slide"><img src="/content/Logos de clientes/Volkswagen.PNG"></div>
-    <div class="slide"><img src="/content/Logos de clientes/Zurich.PNG"></div>
+    <div class="slide"><img src="./content/Logos de clientes/Amca.PNG"></div>
+    <div class="slide"><img src="./content/Logos de clientes/Argos.PNG"></div>
+    <div class="slide"><img src="./content/Logos de clientes/Audi.PNG"></div>
+    <div class="slide"><img src="./content/Logos de clientes/Berkley.PNG"></div>
+    <div class="slide"><img src="./content/Logos de clientes/BMW.PNG"></div>
+    <div class="slide"><img src="./content/Logos de clientes/Ducati.PNG"></div>
+    <div class="slide"><img src="./content/Logos de clientes/El norte.PNG"></div>
+    <div class="slide"><img src="./content/Logos de clientes/Federacion.PNG"></div>
+    <div class="slide"><img src="./content/Logos de clientes/Fiat.PNG"></div>
+    <div class="slide"><img src="./content/Logos de clientes/Galeno.PNG"></div>
+    <div class="slide"><img src="./content/Logos de clientes/GCBA.PNG"></div>
+    <div class="slide"><img src="./content/Logos de clientes/Integrity.PNG"></div>
+    <div class="slide"><img src="./content/Logos de clientes/IPER.PNG"></div>
+    <div class="slide"><img src="./content/Logos de clientes/Iunigo.PNG"></div>
+    <div class="slide"><img src="./content/Logos de clientes/Iveco.PNG"></div>
+    <div class="slide"><img src="./content/Logos de clientes/Lexus.PNG"></div>
+    <div class="slide"><img src="./content/Logos de clientes/Luz y Fuerza.PNG"></div>
+    <div class="slide"><img src="./content/Logos de clientes/Land Rover.PNG"></div>
+    <div class="slide"><img src="./content/Logos de clientes/Mercantil Andina.PNG"></div>
+    <div class="slide"><img src="./content/Logos de clientes/Mercedes.PNG"></div>
+    <div class="slide"><img src="./content/Logos de clientes/Meridional.PNG"></div>
+    <div class="slide"><img src="./content/Logos de clientes/Metropolitana.png"></div>
+    <div class="slide"><img src="./content/Logos de clientes/Mini.PNG"></div>
+    <div class="slide"><img src="./content/Logos de clientes/Nacion.PNG"></div>
+    <div class="slide"><img src="./content/Logos de clientes/Orbis.PNG"></div>
+    <div class="slide"><img src="./content/Logos de clientes/Peugeot.PNG"></div>
+    <div class="slide"><img src="./content/Logos de clientes/Prosegur.PNG"></div>
+    <div class="slide"><img src="./content/Logos de clientes/Provincia.PNG"></div>
+    <div class="slide"><img src="./content/Logos de clientes/Ram.PNG"></div>
+    <div class="slide"><img src="./content/Logos de clientes/Rio Uruguay.PNG"></div>
+    <div class="slide"><img src="./content/Logos de clientes/Sura.PNG"></div>
+    <div class="slide"><img src="./content/Logos de clientes/Toyota.PNG"></div>
+    <div class="slide"><img src="./content/Logos de clientes/TPC.PNG"></div>
+    <div class="slide"><img src="./content/Logos de clientes/Victoria.PNG"></div>
+    <div class="slide"><img src="./content/Logos de clientes/Volkswagen.PNG"></div>
+    <div class="slide"><img src="./content/Logos de clientes/Zurich.PNG"></div>
 
 </div>
 
@@ -464,7 +542,7 @@ sosreddeasistencia.com.ar
       
       </script>
 
-      <script src="/js/sosred.js">
+      <script src="./js/sosred.js">
 
 </body>
 
